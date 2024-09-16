@@ -1,0 +1,40 @@
+body {
+  color: #fff;
+  background-color: #1c1c1c;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+body header button {
+  background-color: blueviolet;
+  color: #1c1c1c;
+  border: none;
+}
+body header:hover {
+  background-color: #fff;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+body .container .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+}
+body .container .item {
+  height: 100px;
+  width: 100px;
+  opacity: 0.5;
+}
+body .container:hover {
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */

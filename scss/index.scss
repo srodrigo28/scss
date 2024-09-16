@@ -1,0 +1,41 @@
+$primary: #1c1c1c;
+$btn-primary: blueviolet;
+$text-color-1: #fff;
+
+@mixin flexCenter( $direction, $wrap ){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+body{
+    color: $text-color-1;
+    background-color: $primary;
+    header{
+        @include flexCenter(row);
+        background-color: $primary;
+        color: $text-color-1;
+        button{
+            background-color: $btn-primary;
+            color: $primary;
+            border: none;   
+        }&:hover{
+            background-color: $text-color-1;
+        }
+    }
+    .container{
+        @include flexCenter();
+        background-color: $text-color-1;
+        .items{
+            @include flexCenter();
+            height: 20vh;
+            width: 100%;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            opacity: .5;
+        }&:hover{ opacity: 1; }
+    }
+}
